@@ -13,7 +13,6 @@ Board::Board(unsigned int row, unsigned int col) {
 }
 
 // got to write a destructor since I used pointers.
-// hold up, do constructor first
 Board::~Board() {
     for (auto i = 0U; i < this->row; ++i) {
         delete[] table[i];
@@ -26,7 +25,6 @@ Board::~Board() {
  */
 
 void Board::addTile(int row, int col, char c) {
-    //std::cout << "adding tile: " << c << std::endl;
     table[row][col] = c;
 }
 

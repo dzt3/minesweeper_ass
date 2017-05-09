@@ -14,7 +14,6 @@ class Board {
         unsigned int getColSize() const;
         void displayBoard() const;
     private:
-        //std::array<std::array<char>> 2d_table;
         char **table;
         unsigned int row;
         unsigned int col;

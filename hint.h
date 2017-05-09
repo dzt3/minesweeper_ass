@@ -7,7 +7,6 @@ class Hint {
     public:
         Hint(const Board &b);
         Hint();
-        //~Hint();
         void displayHint();
     private:
         const Board &b_;
